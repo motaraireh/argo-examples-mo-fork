@@ -21,7 +21,21 @@ spec:
           limits:
             memory: "128Mi"
             cpu: "100m"bases:
+resources:
+- deployment.yaml
+- service.yaml
 
+commonLabels:
+  app: kustomwebapp
+
+commonAnnotations:
+  app: mykustom-annontations
+
+namePrefix:
+  kustom-
+
+nameSuffix:
+  -v1
 patches:
  - replicas.yaml
 
