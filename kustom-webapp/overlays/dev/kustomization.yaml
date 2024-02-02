@@ -13,6 +13,7 @@ namePrefix:
 
 nameSuffix:
   -v1
+  
 patches:
  - replicas.yaml
 
