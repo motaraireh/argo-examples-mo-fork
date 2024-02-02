@@ -1,22 +1,6 @@
 bases:
 - kustom-webapp/overlays/dev/base
 
-resources:
-- deployment.yaml
-- service.yaml
-
-commonLabels:
-  app: kustomwebapp
-
-commonAnnotations:
-  app: mykustom-annontations
-
-namePrefix:
-  kustom-
-
-nameSuffix:
-  -v1
-  
 patches:
  - replicas.yaml
 
