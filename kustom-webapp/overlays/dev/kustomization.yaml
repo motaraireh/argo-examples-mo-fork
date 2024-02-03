@@ -1,5 +1,5 @@
 bases:
-- kustom-webapp/overlays/dev/base
+- ../../base
 
 patches:
  - replicas.yaml
